@@ -1,0 +1,19 @@
+{
+  "name": "myblogapp",
+  "version": "1.0.0",
+  "description": "we will create something exciting",
+  "license": "ISC",
+  "author": "Yogen",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.4",
+    "nodemon": "^3.1.10"
+  }
+}
