@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 
 const UserSchema= new mongoose.Schema({
-    name:{
+    username:{
         type:String,
         required:true
         
@@ -10,14 +10,12 @@ const UserSchema= new mongoose.Schema({
         type:String,
         required:true
     },
-    picture:{
+    email:{
         type:String,
-        default:'https://i.pravatar.cc/150?img=12',
-    },
-    date_of_birth:{
-        type:Date,
         required:true,
-    },
+        unique:true
+    }
+   
     
 },{
     timestamps:true,

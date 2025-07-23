@@ -5,22 +5,14 @@ const port = 3000
 const db=require('./db');
 const body_parser=require('body-parser')
 
+//lets import routes
+const BlogRoutes=require('./routers/BlogRoutes')
 
-app.use(express.static(path.join(__dirname,'./views')))
+//use middleware
+app.use('/blog',BlogRoutes);
 
 
 
-app.get('/', (req, res) => {
-  
- 
-  res.sendFile(path.join(__dirname,'views','login.html'))
-
-})
-
-app.post('/signup',(req,res)=>{
-  res.sendFile(path.join(__dirname,'views','signup.html'))
-
-})
 
 
 app.listen(port, () => {

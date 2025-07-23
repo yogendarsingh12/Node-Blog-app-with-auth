@@ -15,7 +15,7 @@ const CommentSchema= new mongoose.Schema({
         type:String,
         required:true
     },
-    person:{
+    user:{
         type:mongoose.Schema.Types.ObjectId,
         ref:'User'
     },
@@ -32,7 +32,7 @@ const blogSchema= new mongoose.Schema({
         required:true,
     },
     image:{
-        type:Buffer,
+        type:String,
     },
 
     author:{
