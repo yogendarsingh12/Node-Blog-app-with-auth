@@ -75,11 +75,7 @@ UserSchema.methods.GenrateRefreshToken = async function () {
 
 //verify jwt Token
 
-UserSchema.methods.VerifyToken = async function () {
-    let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyM2FiYyIsInVzZXJuYW1lIjoieW9nZW5kZXJfc2luZ2giLCJpYXQiOjE3MjIwMTUwMDAsImV4cCI6MTcyMjAxODYwMH0.4eJGl3KiYrYVuXUzSKlw2xgA8VTR7mABmPTi9YktQ8'
 
-    return jwt.verify(token,process.env.ACCESS_SECRET_TOKENKEY,)
-}
 
 const User = mongoose.model('User', UserSchema);
 
