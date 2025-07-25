@@ -1,13 +1,15 @@
 const express=require('express');
 const router=express.Router();
 
+
+
 //api for fetch all blogs
 router.get('/all/:userid',async (req,res)=>{
 
 })
 //for create blog api
 router.post('/create',async (req,res)=>{
-
+   
 })
 //for update blog api
 router.put('/update/:blogid',async (req,res)=>{
