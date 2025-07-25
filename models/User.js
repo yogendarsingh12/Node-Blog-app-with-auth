@@ -73,7 +73,6 @@ UserSchema.methods.GenrateRefreshToken = async function () {
     return token
 }
 
-//verify jwt Token
 
 
 
